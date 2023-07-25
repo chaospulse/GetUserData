@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace UserData
 {
-	//class for json structure
 	public class PC_Information
 	{
 		public string ProcessorName { get; set; }
