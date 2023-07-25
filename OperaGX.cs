@@ -2,13 +2,9 @@
 using Org.BouncyCastle.Crypto.Parameters;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Security;
-using System;
-using System.Collections.Generic;
 using System.Data.SQLite;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace UserData
 {
@@ -55,14 +51,12 @@ namespace UserData
 			string base64Key = localStateObject.SelectToken("os_crypt.encrypted_key").ToString();
 			byte[] keyBytes = Convert.FromBase64String(base64Key);
 
-			// Удаляем "DPAPI\x01\x00\x00\x00" из массива байтов
 			byte[] decryptedKeyBytes = new byte[keyBytes.Length - 24];
 			Array.Copy(keyBytes, 24, decryptedKeyBytes, 0, decryptedKeyBytes.Length);
 
 			byte[] key = new byte[keyBytes.Length - 5];
 			Array.Copy(keyBytes, 5, key, 0, key.Length);
 
-			// Здесь предполагается, что ключ успешно расшифровывается с помощью ProtectedData
 			byte[] decryptedKey = ProtectedData.Unprotect(key, null, DataProtectionScope.LocalMachine);
 			return decryptedKey;
 		}

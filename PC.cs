@@ -84,38 +84,5 @@ namespace UserData
 			}
 			return Component_Info;
 		}
-		//public static async Task<string> GetPCInfo()
-		//{
-		//	StringBuilder sb = new StringBuilder();
-		//	sb.AppendLine("==================================================\n\n\t\tPC Information\n\n==================================================\n");
-
-		//	sb.AppendLine("Процессор:");
-		//	sb.Append(AppendHardwareInfo("Win32_Processor", "Name"));
-		//	sb.Append(AppendHardwareInfo("Win32_Processor", "Manufacturer"));
-		//	sb.Append(AppendHardwareInfo("Win32_Processor", "Description"));
-		//	sb.AppendLine();
-
-		//	sb.AppendLine("Видеокарта:");
-		//	sb.AppendLine(AppendHardwareInfo("Win32_VideoController", "Name"));
-		//	sb.AppendLine(AppendHardwareInfo("Win32_VideoController", "VideoProcessor"));
-		//	sb.AppendLine(AppendHardwareInfo("Win32_VideoController", "DriverVersion"));
-		//	sb.AppendLine(AppendHardwareInfo("Win32_VideoController", "AdapterRAM"));
-
-		//	if (!String.IsNullOrEmpty(AppendHardwareInfo("Win32_CDROMDrive", "Name")))
-		//	{
-		//		sb.AppendLine("Название дисковода:");
-		//		sb.AppendLine(AppendHardwareInfo("Win32_CDROMDrive", "Name"));
-		//		sb.AppendLine(AppendHardwareInfo("Win32_CDROMDrive", "Drive"));
-		//		sb.AppendLine();
-		//	}
-		//	if (!String.IsNullOrEmpty(AppendHardwareInfo("Win32_DiskDrive", "Caption")))
-		//	{
-		//		sb.AppendLine("Жесткий диск:");
-		//		sb.AppendLine(AppendHardwareInfo("Win32_DiskDrive", "Caption"));
-		//		sb.Append(AppendHardwareInfo("Win32_DiskDrive", "Size"));
-		//	}
-		//	return sb.ToString();
-		//}
-
 	}
 }
