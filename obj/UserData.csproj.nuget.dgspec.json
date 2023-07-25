@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Projects Visual Studio\\C#\\UserData\\UserData.csproj": {}
+  },
+  "projects": {
+    "D:\\Projects Visual Studio\\C#\\UserData\\UserData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects Visual Studio\\C#\\UserData\\UserData.csproj",
+        "projectName": "UserData",
+        "projectPath": "D:\\Projects Visual Studio\\C#\\UserData\\UserData.csproj",
+        "packagesPath": "C:\\Users\\Дима\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects Visual Studio\\C#\\UserData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Дима\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "BouncyCastle.NetCore": {
+              "target": "Package",
+              "version": "[1.9.0, )"
+            },
+            "FireSharp": {
+              "target": "Package",
+              "version": "[2.0.4, )"
+            },
+            "Lextm.SharpSnmpLib": {
+              "target": "Package",
+              "version": "[12.5.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "System.Security.Cryptography.ProtectedData": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "managedwifi": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
